@@ -8,4 +8,5 @@
 
     - collegare un event listener al bottone
     - generare la griglia rimuovendo la classe d-none
+    - generare con un ciclo for per quanti box necessari
     
