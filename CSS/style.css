@@ -1,6 +1,32 @@
+*{
+    font-family: "VT323", monospace;
+  }
+  
+
 #header,
 #header .col{
     height: 100px;
-    background-color: gray;
+    background-color: #bcbcbc;
 }
 
+#header .btn > span{
+    font-size: 1.5rem;
+
+}
+
+/* GAME */
+
+#game{
+    background-color: aliceblue;
+    padding: 60px;
+}
+
+#game .comtainer{
+    height: 1000px;
+}
+
+#game .square{
+    width: 800px;
+    aspect-ratio: 1;
+    border: 3px solid black;
+}
