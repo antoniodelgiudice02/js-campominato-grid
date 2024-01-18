@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <header>
 
         <section id="header">
@@ -26,7 +27,7 @@
                     </div>
 
                     <div class="col d-flex align-items-center justify-content-end">
-                        <div class="btn btn-outline-dark"><span>Play</span></div>
+                        <div class="btn btn-outline-dark" id="play-button"><span>Play</span></div>
                     </div>
 
                 </div>
@@ -35,19 +36,21 @@
 
         </section>
 
-        <section id="game">
+    </header>
 
-            <div class="container d-flex justify-content-center align-items-center">
+    <section id="game" class="vh-100">
 
-                <div class="square">
+        <div class="container d-flex justify-content-center align-items-center">
 
-                </div>
+            <div class="square d-flex flex-wrap d-none" id="square">
+
+                <div class="box" id="box"></div>
+
 
             </div>
 
-        </section>
+        </div>
 
-
-    </header>
+    </section>
 </body>
 </html>
