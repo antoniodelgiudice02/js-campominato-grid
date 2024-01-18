@@ -13,39 +13,43 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <header>
 
-        <section id="header">
+    <section id="jumbotron" class="vh-100">
 
-            <div class="container">
+        <div class="container h-100">
 
-                <div class="row">
+            <div class="row flex-column justify-content-center align-items-center h-100">
 
-                    <div class="col text-start d-flex align-items-center">
-                        <h1>Campo Minato</h1>
-                    </div>
+                
+                <div class="text-center my-5"><span class="title">CAMPO</span></div>
+                
+                <div class="btn btn-outline-dark w-25" id="play-button"><span>Play</span></div>
 
-                    <div class="col d-flex align-items-center justify-content-end">
-                        <div class="btn btn-outline-dark" id="play-button"><span>Play</span></div>
-                    </div>
+                <div class="text-center my-5"><span class="title">MINATO</span></div>
 
-                </div>
+                
 
             </div>
 
-        </section>
+        </div>
 
-    </header>
+    </section>
 
-    <section id="game" class="vh-100">
+    <section id="game" class="vh-100 d-none">
 
-        <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="container d-flex justify-content-around align-items-center vh-100">
+
+            <div class="text-center">
+                <span class="big-title">CAMPO</span> <br>
+                <span class="big-title">MINATO</span>
+            </div>
 
             <div class="square d-flex flex-wrap d-none" id="square">
 
 
             </div>
+
+            <div><img src="./0020.gif" alt=""></div>
 
         </div>
 

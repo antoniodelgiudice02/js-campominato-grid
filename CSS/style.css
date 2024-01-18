@@ -3,26 +3,34 @@
   }
   
 
-#header,
-#header .col{
-    height: 80px;
+#jumbotron,
+#jumbotron .col{
     background-color: #bcbcbc;
 }
 
-#header .btn > span{
+#jumbotron .btn > span{
     font-size: 1.5rem;
 
+}
+
+
+#jumbotron .title{
+    font-size: 4rem;
 }
 
 /* GAME */
 
 #game{
-    background-color: aliceblue;
+    background-color: #bcbcbc;
 }
 
 #game .comtainer{
     height: 1000px;
     padding: 40px;
+}
+
+#game .big-title{
+    font-size: 5rem;
 }
 
 #game .square{
@@ -41,4 +49,9 @@
 
 .clicked{
     background-color: lightblue;
+}
+
+.notclicked{
+    
+    background-color: rgb(255, 255, 255, 0.5);
 }
