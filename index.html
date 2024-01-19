@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -22,8 +23,19 @@
 
                 
                 <div class="text-center my-5"><span class="title">CAMPO</span></div>
+
                 
+
                 <div class="btn btn-outline-dark w-25" id="play-button"><span>Play</span></div>
+
+                
+                <select class="form-select text-center my-form mt-2" aria-label="difficulty" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                
+                
 
                 <div class="text-center my-5"><span class="title">MINATO</span></div>
 
@@ -39,8 +51,10 @@
 
         <div class="container d-flex justify-content-around align-items-center vh-100">
 
-            <div class="text-center">
-                <span class="big-title">CAMPO</span> <br>
+            <div id="return-button" class="btn btn-outline-dark"><i class="fa-solid fa-arrow-left"></i></div>
+
+            <div class="text-center d-flex flex-column">
+                <span class="big-title">CAMPO</span>
                 <span class="big-title">MINATO</span>
             </div>
 

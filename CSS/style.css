@@ -1,57 +1,99 @@
-*{
+* {
     font-family: "VT323", monospace;
-  }
-  
+}
+
 
 #jumbotron,
-#jumbotron .col{
+#jumbotron .col {
     background-color: #bcbcbc;
 }
 
-#jumbotron .btn > span{
+#jumbotron .btn>span {
     font-size: 1.5rem;
 
 }
 
 
-#jumbotron .title{
+#jumbotron .title {
     font-size: 4rem;
+}
+
+#jumbotron .my-form {
+    background-color: #bcbcbc;
+    border: 1px solid black;
+    width: 330px;
+    height: 49.6px;
+    font-size: 1.5rem;
+    padding: 0 36px;
+    cursor: pointer;
+}
+
+.my-form:hover {
+    background-color: black !important;
+    color: white;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background-image: none;
 }
 
 /* GAME */
 
-#game{
+#game {
     background-color: #bcbcbc;
+    position: relative;
 }
 
-#game .comtainer{
+#game .comtainer {
     height: 1000px;
     padding: 40px;
 }
 
-#game .big-title{
+#game .big-title {
     font-size: 5rem;
 }
 
-#game .square{
+#game .square {
     width: 650px;
     height: 650px;
     border: 1px solid black;
 }
 
-#game .box{
-    width: calc(100% / 10);
-    height: calc(100% / 10);
+#game .box {
     border: 1px solid black;
-    line-height: 64.83px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.clicked{
+#return-button {
+    position: absolute;
+    top: 15%;
+    left: 15%
+}
+
+.box-easy {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.box-medium {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.box-hard {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.clicked {
     background-color: lightblue;
 }
 
-.notclicked{
-    
+.notclicked {
+
     background-color: rgb(255, 255, 255, 0.5);
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
