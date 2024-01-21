@@ -7,6 +7,12 @@ const game = document.getElementById('game')
 const input = document.getElementById('difficulty')
 const difficulty = input.value;
 const returnButton = document.getElementById('return-button')
+const bomb = []
+const gameOver = document.getElementById('game-over')
+const gameOverText = document.getElementById('game-over-text')
+const scoreText = document.getElementById('score-text')
+let score = 0
+let numberOfCell = 0
 
 
 // GENERARE LA GRIGLIA AL CLICK DI PLAYBUTTON
@@ -18,12 +24,29 @@ playButton.addEventListener('click', function () {
     game.classList.remove('d-none')
     //generare con un ciclo for quanti box necessari
     setDifficulty(difficulty)
-    const grid = creatGrid(box)
+    const grid = creatGrid(numberOfCell)
+    console.log(grid)
+
+    // GENERO LE BOMBE
+
+
+    max = numberOfCell
+    while (bomb.length < 16) {
+        let generateNumber = Math.floor((Math.random() * max) + 1);
+        if (!bomb.includes(generateNumber)) {
+            bomb.push(generateNumber)
+        }
+    }
+
+    console.log(bomb)
+
+
+
 })
 
 
 
-// al click della cella, questa si colora di azzurro
+
 
 
 

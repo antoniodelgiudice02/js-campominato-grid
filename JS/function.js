@@ -1,4 +1,4 @@
-    // CREAZIONE CELLA
+// CREAZIONE CELLA
 
 function creatCell(i) {
 
@@ -28,9 +28,28 @@ function creatCell(i) {
     item.innerHTML = i
 
     item.addEventListener('click', function () {
-        item.classList.toggle('clicked')
-        item.classList.toggle('notclicked')
-        console.log(i)
+
+        scoreText.innerText = ('Score:' + score)
+        item.classList.add('unclickeble')
+
+
+        if (bomb.includes(i)) {
+            item.classList.add('bomb-clicked')
+            gameOver.classList.remove('d-none')
+            gameOverText.innerText = ('GAME OVER')
+            gameOverText.classList.add('text-danger')
+
+        } else {
+            item.classList.add('clicked')
+            score++;
+            console.log(score)
+            console.log(i)
+            if (score == numberOfCell - bomb.length) {
+                gameOverText.innerText = ('HAI VINTO')
+                gameOverText.classList.add('green')
+                gameOver.classList.remove('d-none')
+            }
+        }
 
     })
 
@@ -50,20 +69,26 @@ function creatGrid(size) {
 // DIFFICOLTA'
 
 function setDifficulty(setting) {
-    input.addEventListener('click', function(){
+    input.addEventListener('click', function () {
 
     })
 
     if (setting == 'easy') {
-        const easy = creatGrid(100)
+        numberOfCell = 100
     }
 
     if (setting == 'medium') {
-        const medium = creatGrid(81)
+        numberOfCell = 81
     }
 
     if (setting == 'hard') {
-        const hard = creatGrid(49)
+        numberOfCell = 49
     }
 
+}
+
+// random number
+
+function getRandomNumber(min, max) {
+    let generateNumber = Math.floor((Math.random() * max) + min);
 }
